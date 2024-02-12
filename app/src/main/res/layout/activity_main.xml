@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/gpaCalculatorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA Calculator"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Subject 1 -->
+    <TextView
+        android:id="@+id/subject1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject 1"
+        android:textSize="18sp"
+        android:layout_below="@id/gpaCalculatorTitle"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@id/subject1Label"
+        android:layout_alignTop="@id/subject1Label"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Subject 2 -->
+    <TextView
+        android:id="@+id/subject2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject 2"
+        android:textSize="18sp"
+        android:layout_below="@id/s1"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@id/subject1Label"/>
+
+    <EditText
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@id/subject2Label"
+        android:layout_alignTop="@id/subject2Label"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Subject 3 -->
+    <TextView
+        android:id="@+id/subject3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject 3"
+        android:textSize="18sp"
+        android:layout_below="@id/s2"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@id/subject2Label"/>
+
+    <EditText
+        android:id="@+id/s3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@id/subject3Label"
+        android:layout_alignTop="@id/subject3Label"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Subject 4 -->
+    <TextView
+        android:id="@+id/subject4Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject 4"
+        android:textSize="18sp"
+        android:layout_below="@id/s3"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@id/subject3Label"/>
+
+    <EditText
+        android:id="@+id/s4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@id/subject4Label"
+        android:layout_alignTop="@id/subject4Label"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+    <TextView
+        android:id="@+id/subject5Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject 5"
+        android:textSize="18sp"
+        android:layout_below="@id/s4"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@id/subject4Label"/>
+
+    <!-- Subject 5 EditText -->
+
+    <!-- Calculate GPA Button -->
+    <EditText
+        android:id="@+id/s5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject5Label"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/subject5Label"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compute GPA"
+        android:layout_below="@id/s5"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Total Marks Label -->
+
+    <!-- Total Marks EditText -->
+    <TextView
+        android:id="@+id/totalMarksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_alignStart="@id/btn"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="29dp"
+        android:text="Total Marks"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/totalMarksLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Average Label -->
+
+    <!-- Average EditText -->
+    <TextView
+        android:id="@+id/averageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t"
+        android:layout_alignStart="@id/totalMarksLabel"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="49dp"
+        android:text="Average"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/averageLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-43dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@id/averageLabel"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
